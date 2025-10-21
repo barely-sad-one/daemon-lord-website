@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</section>
+
+{{ $posts := sort (where .Site.RegularPages "Type" "posts") "Date" "desc" }}
+{{ if gt (len $posts) 0 }}
+  <hr>
+
+  <section>
+    <h2>Latest Posts</h2>
+
+    {{ $paginator := .Paginate $posts 5 }}
+    <ul>
+      {{ range $paginator.Pages }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <small>({{ .Date.Format "Jan 2, 2006" }})</small>
+        </li>
+      {{ end }}
+    </ul>
+
+    <!-- Pagination controls -->
+    {{ if or $paginator.HasPrev $paginator.HasNext }}
+      <nav class="pagination">
+        {{ if $paginator.HasPrev }}
+          <a href="{{ $paginator.Prev.URL }}">← Newer</a>
+        {{ end }}
+        {{ if $paginator.HasNext }}
+          <a href="{{ $paginator.Next.URL }}">Older →</a>
+        {{ end }}
+      </nav>
+    {{ end }}
+  </section>
+{{ end }}
+{{ end }}
+

@@ -2,3 +2,39 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Daemon Lord'
 theme = 'terminal'
+copyright = "© 2025 Daemonlord"
+
+[params]
+  contentTypeName = 'posts'
+  showMenuItems = 5
+  showLanguageSelector = true
+  showFooter = true
+  fullWidthTheme = true
+  centerTheme = true
+  showLastUpdated = true
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    title = "Daemonlord"
+
+    [languages.en.params]
+      menuMore = 'Show more'
+      readMore = 'Read more'
+
+      [languages.en.params.logo]
+        logoText = 'Daemon Lord'
+        logoHomeLink = '/'
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = 'home'
+        name = 'Home'
+        url = '/'
+        weight = 1
+
+      # [[languages.en.menu.main]]
+      #   identifier = 'posts'
+      #   name = 'Posts'
+      #   url = '/posts'
+      #   weight = 2
