@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://daemonlord.in/'
 languageCode = 'en-us'
 title = 'Daemon Lord'
 theme = 'terminal'
