@@ -1,7 +1,8 @@
 baseURL = 'http://daemonlord.in/'
-languageCode = 'en-us'
 title = 'Daemon Lord'
 theme = 'terminal'
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 copyright = "© 2025 Daemonlord"
 
 [params]
@@ -17,6 +18,8 @@ copyright = "© 2025 Daemonlord"
   [languages.en]
     languageName = 'English'
     title = "Daemonlord"
+    weight = 1
+    contentDir = 'content/en'
 
     [languages.en.params]
       menuMore = 'Show more'
@@ -24,17 +27,44 @@ copyright = "© 2025 Daemonlord"
 
       [languages.en.params.logo]
         logoText = 'Daemon Lord'
-        logoHomeLink = '/'
+        logoHomeLink = '/en/'
 
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = 'home'
         name = 'Home'
-        url = '/'
+        url = '/en/'
         weight = 1
 
       # [[languages.en.menu.main]]
       #   identifier = 'posts'
       #   name = 'Posts'
-      #   url = '/posts'
+      #   url = '/en/posts'
+      #   weight = 2
+
+  [languages.ja]
+    languageName = '日本語'
+    title = 'デーモンロード'
+    weight = 1
+    contentDir = 'content/ja'
+
+    [languages.ja.params]
+      menuMore = 'もっと見る'
+      readMore = '続きを読む'
+
+      [languages.ja.params.logo]
+        logoText = 'デーモンロード'
+        logoHomeLink = '/ja/'
+
+    [languages.ja.menu]
+      [[languages.ja.menu.main]]
+        identifier = 'home'
+        name = 'ホーム'
+        url = '/ja/'
+        weight = 1
+
+      # [[languages.ja.menu.main]]
+      #   identifier = 'posts'
+      #   name = '投稿'
+      #   url = '/ja/posts'
       #   weight = 2
