@@ -36,6 +36,12 @@ copyright = "© 2025 Daemonlord"
         url = '/en/'
         weight = 1
 
+      [[languages.en.menu.main]]
+        identifier = 'support'
+        name = 'Buy Me a Coffee'
+        url = '#'
+        weight = 99
+
       # [[languages.en.menu.main]]
       #   identifier = 'posts'
       #   name = 'Posts'
@@ -43,7 +49,7 @@ copyright = "© 2025 Daemonlord"
       #   weight = 2
 
   [languages.ja]
-    languageName = '日本語'
+    languageName = '日本語  '
     title = 'デーモンロード'
     weight = 1
     contentDir = 'content/ja'
@@ -62,6 +68,12 @@ copyright = "© 2025 Daemonlord"
         name = 'ホーム'
         url = '/ja/'
         weight = 1
+
+      [[languages.ja.menu.main]]
+        identifier = 'support'
+        name = 'コーヒーを奢る'
+        url = '#'
+        weight = 99
 
       # [[languages.ja.menu.main]]
       #   identifier = 'posts'
