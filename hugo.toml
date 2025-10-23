@@ -1,4 +1,4 @@
-baseURL = 'http://daemonlord.in/'
+baseURL = 'https://daemonlord.in/'
 title = 'Daemon Lord'
 theme = 'terminal'
 defaultContentLanguage = "en"
