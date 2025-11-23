@@ -2,7 +2,6 @@ baseURL = 'https://daemonlord.in/'
 title = 'Daemon Lord'
 theme = 'terminal'
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
 copyright = "© 2025 Daemonlord"
 
 [params]
