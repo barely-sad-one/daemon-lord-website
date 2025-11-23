@@ -26,13 +26,13 @@ copyright = "© 2025 Daemonlord"
 
       [languages.en.params.logo]
         logoText = 'Daemon Lord'
-        logoHomeLink = '/en/'
+        logoHomeLink = '/'
 
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = 'home'
         name = 'Home'
-        url = '/en/'
+        url = '/'
         weight = 1
 
       [[languages.en.menu.main]]
@@ -44,7 +44,7 @@ copyright = "© 2025 Daemonlord"
       # [[languages.en.menu.main]]
       #   identifier = 'posts'
       #   name = 'Posts'
-      #   url = '/en/posts'
+      #   url = '/posts'
       #   weight = 2
 
   [languages.ja]
